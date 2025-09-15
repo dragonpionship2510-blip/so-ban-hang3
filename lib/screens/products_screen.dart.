@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+
+class ProductsScreen extends StatelessWidget {
+  const ProductsScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Sản phẩm')),
+      body: ListView(
+        children: const [
+          ListTile(title: Text('Sản phẩm 1 - Giá: 10.000đ')),
+          ListTile(title: Text('Sản phẩm 2 - Giá: 20.000đ')),
+        ],
+      ),
+    );
+  }
+}
